@@ -1,0 +1,143 @@
+body {
+  background-color: #303446;
+  margin: 0;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #c6d0f5;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.empty {
+  all: unset;
+}
+
+.links {
+  transition: 0.5s;
+  color: #8087a2;
+  background-color: #1e2030;
+  padding: 0.65vw 1.45vw;
+  text-decoration: none;
+  border-radius: 0.85vw;
+  font-size: 0.9vw;
+  margin-left: auto;
+  font-weight: 400;
+}
+
+.links:hover {
+  box-shadow: 0 0 0.5vw 0.5vw rgba(255, 255, 255, 0.05);
+  transform: scale(1.03);
+}
+
+.links:active {
+  transition: 0.2s;
+  transform: scale(0.92)
+}
+
+#navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+#chromeosgif {
+  margin: 0;
+}
+
+#navbar {
+  display: flex;
+  --padding-side-nav: 3vw;
+  background-color: #292c3c;
+  margin: 0;
+  padding-left: var(--padding-side-nav);
+  padding-right: var(--padding-side-nav);
+  flex-direction: row;
+}
+
+#maincontent {
+  --padding-side-main: 20vw;
+  padding-left: var(--padding-side-main);
+  padding-right: var(--padding-side-main);
+}
+
+#start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#center-text {
+  transition-timing-function: ease;
+  animation-duration: 1.5s;
+  animation-name: slide-in-main;
+}
+
+#next-text {
+  opacity: 0;
+  transition-timing-function: ease;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-name: slide-down-sub;
+  animation-fill-mode: forwards;
+  margin-top: 0
+}
+
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+@keyframes slide-in-main {
+  from {
+    transform: translateX(-20vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down-sub {
+  from {
+    transform: translateY(-3vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
