@@ -134,10 +134,12 @@ h1, h2, h3, h4, h5, h6, p, a {
   from {
     transform: translateY(-3vw);
     opacity: 0;
+    scale: 60%
   }
 
   to {
     transform: translateY(0);
     opacity: 1;
+    scale: 100%
   }
 }
